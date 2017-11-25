@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">jairoDev</string>
+    <string name="app_name">mobiles 2017-B</string>
+    <string name="edit_message">Ingresa un mensaje</string>
+    <string name="button_send">Enviar</string>
 </resources>
