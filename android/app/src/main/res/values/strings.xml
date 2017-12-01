@@ -2,4 +2,6 @@
     <string name="app_name">mobiles 2017-B</string>
     <string name="edit_message">Ingresa un mensaje</string>
     <string name="button_send">Enviar</string>
+    <string name="button_last_value">Last</string>
+    <string name="last_value">None</string>
 </resources>
