@@ -3,5 +3,8 @@
     <string name="edit_message">Ingresa un mensaje</string>
     <string name="button_send">Enviar</string>
     <string name="button_last_value">Last</string>
-    <string name="last_value">None</string>
+    <string name="lastvalue">None</string>
+    <string name="buton_save">Save</string>
+    <string name="button_load">El ultimo registro es ...</string>
+    <string name="preference_file_key">com.epn.jairo.PREFERENCE_FILE_KEY</string>
 </resources>
