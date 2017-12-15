@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.epn.jairo.jairodev">
+    package="com.epn.jairo.proyecto_practica_6">
 
     <application
         android:allowBackup="true"
@@ -17,14 +17,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DisplayMessageActivity"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity android:name=".DisplayImageActivity" />
-        <activity android:name=".LoadKeyValue"></activity>
+            android:name=".IngresoDeCasos"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".ConsultaDeCasos"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".ResultadoDeBusqueda"></activity>
     </application>
 
 </manifest>
