@@ -1,3 +1,5 @@
+package com.epn.jairo.proyecto_practica_5;
+
 /**
  * Created by Jairo on 14/12/2017.
  */
@@ -21,27 +23,27 @@ public class Contact {
         this._phone_number=_phone_number;
     }
 
-    public String get_name() {
+    public String getName() {
         return _name;
     }
 
-    public void set_name(String _name) {
+    public void setName(String _name) {
         this._name = _name;
     }
 
-    public String get_phone_number() {
+    public String getPhoneNumber() {
         return _phone_number;
     }
 
-    public void set_phone_number(String _phone_number) {
+    public void setPhoneNumber(String _phone_number) {
         this._phone_number = _phone_number;
     }
 
-    public int get_id() {
+    public int getID() {
         return _id;
     }
 
-    public void set_id(int _id) {
+    public void setID(int _id) {
         this._id = _id;
     }
 }

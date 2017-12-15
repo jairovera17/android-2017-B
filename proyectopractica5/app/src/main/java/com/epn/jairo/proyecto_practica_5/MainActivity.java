@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +17,44 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        DatabaseHandler db = new DatabaseHandler(this);
+        Log.d("Insertar","Insertando");
+        db.addContact(new Contact("JAIRO VERA","1234567890"));
+        Log.d("Insertar JAIROVERA","Success");
+        db.addContact(new Contact("BBB","987654321"));
+        Log.d("Insert BBB","Success");
+        /////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////
+        Log.d("Reading","Reading all contacts...");
+        List<Contact> contacts = db.getAllContacts();
+        for(Contact cn:contacts){
+            String log = "ID: "+cn.getID()+" ,Name: "+cn.getName()+" ,Phone: "+
+                    cn.getPhoneNumber();
+            Log.d("Name",log);
+        }
+        /////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////
+        Log.d("Update:","BBB-> CCC");
+        Contact contact1 = db.getContact(2);
+        Log.d("Old Contact", contact1.getName());
+        contact1.setName("CCC");
+        contact1.setPhoneNumber("456798132");
+        Log.d("New Contact",contact1.getName());
+        db.updateContact(contact1);
+        /////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////
+        Log.d("Deleting: ","Deleting all contacts...");
+        for(Contact c:contacts){
+            String log = "ID: "+c.getID()+" ,Name:"+c.getName()
+                    +" ,Phone"+c.getPhoneNumber();
+            Log.d("Delete",log);
+            db.deleteContact(c);
+        }
+
+
     }
 
     public void writeFile(View view){
