@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     public void open_ingreso_de_casos(View view){
         Intent intent = new Intent(this,IngresoDeCasos.class);
         startActivity(intent);
+        ///wooooooo
     }
 
     public void open_consulta_de_casos(View view){
