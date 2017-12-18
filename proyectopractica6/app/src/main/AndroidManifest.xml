@@ -8,6 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name=".ProyectoSeis"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -24,7 +25,8 @@
             android:name=".ConsultaDeCasos"
             android:parentActivityName=".MainActivity"
             />
-        <activity android:name=".ResultadoDeBusqueda"></activity>
+        <activity android:name=".ResultadoDeBusqueda"
+            android:parentActivityName=".ConsultaDeCasos"></activity>
     </application>
 
 </manifest>
