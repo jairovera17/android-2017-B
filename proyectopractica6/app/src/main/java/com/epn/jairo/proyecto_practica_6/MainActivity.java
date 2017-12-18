@@ -7,16 +7,18 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     public void open_ingreso_de_casos(View view){
         Intent intent = new Intent(this,IngresoDeCasos.class);
         startActivity(intent);
-        ///wooooooo
+
     }
 
     public void open_consulta_de_casos(View view){
