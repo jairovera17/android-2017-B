@@ -25,4 +25,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,ConsultaDeCasos.class);
         startActivity(intent);
     }
+
+    public void  open_ver_todos(View view){
+        Intent intent = new Intent(this,VerTodos.class);
+        startActivity(intent);
+    }
 }
