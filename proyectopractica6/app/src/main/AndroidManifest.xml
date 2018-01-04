@@ -3,12 +3,12 @@
     package="com.epn.jairo.proyecto_practica_6">
 
     <application
+        android:name=".ProyectoSeis"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".ProyectoSeis"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -19,14 +19,17 @@
         </activity>
         <activity
             android:name=".IngresoDeCasos"
-            android:parentActivityName=".MainActivity"
-            />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ConsultaDeCasos"
-            android:parentActivityName=".MainActivity"
-            />
-        <activity android:name=".ResultadoDeBusqueda"
-            android:parentActivityName=".ConsultaDeCasos"></activity>
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ResultadoDeBusqueda"
+            android:parentActivityName=".ConsultaDeCasos" />
+        <activity android:name=".VerTodos"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ResultadoList"
+            android:parentActivityName=".VerTodos"></activity>
     </application>
 
 </manifest>

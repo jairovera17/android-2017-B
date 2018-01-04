@@ -9,6 +9,8 @@ import android.os.Parcelable;
 import android.util.Log;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Jairo on 17/12/2017.
@@ -80,6 +82,28 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 ,cursor.getString(4));
         db.close();
         return caso;
+    }
+
+    public ArrayList<Caso> get_all_casos(){
+        ArrayList<Caso> res = new ArrayList<>();
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "select * from "+TABLE_CASES;
+        Cursor cursor = db.rawQuery(sql,null);
+        if(cursor.moveToFirst()){
+            while (!cursor.isAfterLast()){
+                String name = cursor.getString(1);
+                res.add(new Caso(Integer.parseInt(cursor.getString(0))
+                        ,cursor.getString(1)
+                        ,cursor.getString(2)
+                        ,cursor.getString(3)
+                        ,cursor.getString(4)));
+                cursor.moveToNext();
+            }
+        }
+        for(Caso str: res){
+            Log.d("response::",str.get_cliente());
+        }
+        return res;
     }
 
 
