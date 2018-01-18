@@ -3,4 +3,11 @@
     <string name="string_input_casos">Ingreso de casos</string>
     <string name="string_search_casos">Consulta de casos</string>
     <string name="show_all">Ver Todos</string>
+    <string name="country_prompt">Escoja un país</string>
+    <string-array name="option_arrays">
+        <item>En curso</item>
+        <item>Pendiente de dictamen</item>
+        <item>En apelación</item>
+        <item>Cerrado</item>
+    </string-array>
 </resources>
