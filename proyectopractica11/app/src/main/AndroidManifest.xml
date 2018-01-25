@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.epn.jairo.proyecto_practica_6">
+    package="com.epn.jairo.proyectopractica11">
 
     <application
-        android:name=".ProyectoSeis"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,21 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".IngresoDeCasos"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".ConsultaDeCasos"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".ResultadoDeBusqueda"
-            android:parentActivityName=".ConsultaDeCasos" />
-        <activity
-            android:name=".VerTodos"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".ResultadoList"
-            android:parentActivityName=".VerTodos" />
         <activity android:name=".MainActivity"></activity>
     </application>
 
