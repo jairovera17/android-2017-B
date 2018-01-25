@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".splashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,10 +26,13 @@
         <activity
             android:name=".ResultadoDeBusqueda"
             android:parentActivityName=".ConsultaDeCasos" />
-        <activity android:name=".VerTodos"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".ResultadoList"
-            android:parentActivityName=".VerTodos"></activity>
+        <activity
+            android:name=".VerTodos"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ResultadoList"
+            android:parentActivityName=".VerTodos" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
